@@ -1,3 +1,9 @@
+Working Area          Staging           HEAD(Local Repo)         Remote Repo
+
+------------------------>>-------------------->>------------------------>>
+
+    git add .              git commit -m "msg"   git push origin master
+
 #### Create branch
 git branch newbranch oldbranch
 
@@ -70,6 +76,8 @@ git checkout bala (need to update)
 
 git checkout master . (updating master to current branch bala)
 
+git checkout head (checkout to HEAD)
+
 #### Git logs
 git log  (help to view logs of commits, get sha and reset to the certain commit)
 
@@ -106,6 +114,22 @@ Where "git log" takes the log of remote repo
 "git reflog" takes the entire log of local repo
 
 #### git cherry-pick
-Cherry picking in Git means to choose a commit from one branch and apply it onto another.
+Cherry picking in Git means choose a single commit from one branch and apply it in another.
 
 git cherry-pick commit_hash
+
+#### Git Revert
+Moreover, we can say that git revert records some new changes that are just opposite to previously made commits. It can be useful for tracking bugs in the project. It make the new commit that is reverted back
+
+If you want to remove something from history then git revert is a wrong choice. try git reset
+
+git revert commit_hash
+
+#### Git Restore
+Restore files from Staging & working area
+
+git restore --staged filename.txt (this will restore to prev ver on staging area to working direc)
+
+git restore filename.txt (this will restore to previous version/before modification)
+
+git restore --source commit_hash (restore to particular commit)
