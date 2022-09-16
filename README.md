@@ -61,3 +61,12 @@ git merge master    --> (this merges master branch to bala)
 git checkout bala (need to update)
 
 git checkout master . (updating master to current branch bala)
+
+#### Git logs
+git log  (help to view logs of commits, get sha and reset to the certain commit)
+
+git log --oneline (give one line answer)
+
+git log --stat  (give full info about files)
+
+git log --patch  (gives full info about files and location)
