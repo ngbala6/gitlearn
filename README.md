@@ -34,7 +34,9 @@ git status
 git fetch --prune
 
 #### Reset the local changes to remote
-git reset --hard <sha>
+git reset --hard 78b976c177ddfa46e996d03c36b899f597a71824
+
+git checkout 78b976c177ddfa46e996d03c36b899f597a71824
 
 #### Git commit. . . help when you committed mistakenly without adding an other file
 git add bala.py
@@ -70,3 +72,23 @@ git log --oneline (give one line answer)
 git log --stat  (give full info about files)
 
 git log --patch  (gives full info about files and location)
+
+#### Git Rebase
+git rebase similar to git merge
+
+Git Merge -> branch commits get merged to "master" as a single one
+
+Git Rebase -> It takes the history of branch commits & updated in commit msg too(track the changes commit history)
+
+Example: I have 3 commits in "bala" branch and I want to merge in "master" with tracking commits
+
+git checkout master
+
+git rebase bala
+
+git add .
+
+git commit -m "final commit"
+
+git push origin master
+
