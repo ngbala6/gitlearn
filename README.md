@@ -1,5 +1,4 @@
 ![Works](extras/2.png)
-![works](extras/1.png)
 
 #### Create branch
 git branch newbranch oldbranch
@@ -130,3 +129,5 @@ git restore --staged filename.txt (this will restore to prev ver on staging area
 git restore filename.txt (this will restore to previous version/before modification)
 
 git restore --source commit_hash (restore to particular commit)
+
+![works](extras/1.png)
