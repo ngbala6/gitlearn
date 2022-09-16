@@ -1,8 +1,5 @@
-Working Area                  Staging               HEAD(Local Repo)         Remote Repo
-
-         ------------------------>>-------------------->>------------------------>>
-
-              git add .              git commit -m "msg"   git push origin master
+![Works](extras/2.png)
+![works](extras/1.png)
 
 #### Create branch
 git branch newbranch oldbranch
