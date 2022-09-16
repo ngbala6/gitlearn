@@ -3,7 +3,6 @@ git branch newbranch oldbranch
 
 or git branch newbranch
 
-
 #### Delete branch in remote
 git push origin --delete branch-name
 
@@ -36,7 +35,6 @@ git fetch --prune
 #### Reset the local changes to remote
 git reset --hard 78b976c177ddfa46e996d03c36b899f597a71824
 
-git checkout 78b976c177ddfa46e996d03c36b899f597a71824
 
 #### Git commit. . . help when you committed mistakenly without adding an other file
 git add bala.py
@@ -58,6 +56,14 @@ git mv bala.py src/gold.py (move files)
 git checkout bala
 
 git merge master    --> (this merges master branch to bala)
+
+git merge 78b976c177ddfa46e996d03c36b899f597a71824 (can merge particular commit)
+
+If conflict is occuring when merge, 
+
+git pull --rebase origin master    (it will give the conflict files)
+
+git mergetool (helps to solve the problem)
 
 #### copy everything exact from one branch to another
 git checkout bala (need to update)
@@ -92,3 +98,14 @@ git commit -m "final commit"
 
 git push origin master
 
+#### Git Reflog
+It is similar to the "git log"
+
+Where "git log" takes the log of remote repo
+
+"git reflog" takes the entire log of local repo
+
+#### git cherry-pick
+Cherry picking in Git means to choose a commit from one branch and apply it onto another.
+
+git cherry-pick commit_hash
